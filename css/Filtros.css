@@ -1,0 +1,116 @@
+
+.container {
+	background: #fff;
+	width: 95%;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.catalogo ul {
+	list-style: none;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.catalogo ul li {
+	display: table-cell;
+	width:20%;
+	background-size: cover;
+	background-position: center center;
+}
+.catalogo ul li a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.catalogo ul .todos {
+background-image: url(../img/banner/pngwing.com.png);}
+.catalogo ul .LOL {background-image: url(../img/banner/kt-rolster.webp);}
+.catalogo ul .Smash{background-image: url(../img/banner/sudden_death__super_smash_bros__ultimate_wallpaper_by_livingdeadsuperstar_dcfw416-fullview.jpg);}
+.catalogo ul .Mario{background-image: url(../img/banner/super_mario_banner_wallpaper_by_jpninja426_debka8b-fullview.jpg);}
+.catalogo ul .Valorant{background-image: url(../img/banner/Valorant.jfif);}
+.catalogo ul .Pokemon{background-image: url(../img/banner/pokemon-banner.jfif);}
+.catalogo ul .Sonic{background-image: url(../img/banner/sonic-banner.jpg);}
+.catalogo ul .MK{background-image: url(../img/banner/Mortal-Kombat-X-banner.png);}
+.catalogo ul .Overwach {background: url(../img/banner/overwatch-banner.jfif);}
+.catalogo ul .Zelda{background-image: url(../img/banner/the-legend-of-zelda-link-simple-background-minimalism-wallpaper-preview.jpg);}
+
+.galeria {
+	width: 100%;
+	padding: 20px;
+	margin-top: 20px;
+	display: flex;;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.galeria .title-img {
+	width: 100%;
+	border-top: 4px solid var(--MClaro);
+}
+
+.galeria .title-img h3 {
+	font-size: 30px;
+	text-align: center;
+	padding: 10px 0;
+	color: #636363;
+	font-weight: 100;
+}
+.images{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.images .box-img {
+	width: calc(100px * 3);
+	margin: 10px;
+	border-radius: 2px;
+	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.884);
+	overflow: hidden;
+}
+
+.images .box-img img {
+	width: 100%;
+	vertical-align: top;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.images .box-img :hover{
+	box-shadow: 0px 0px 5px 5px #000 inset;
+}
+
+.images .box-img img:hover {
+	
+	transform: scale(1.2);
+	
+}
+
+.active {
+	border-bottom: 4px solid #E62117;
+}
+.pagination{
+	display: flex;
+	justify-content: center;
+}
+.button-pag{
+	border: none;
+	background-color: #E62117;
+	padding: 5px 10px;
+	margin: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s all;
+}
+.button-pag:hover{
+	background-color: #9b150e;
+}
+.button-active{
+	border: 2px solid gold;
+}

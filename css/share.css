@@ -1,0 +1,95 @@
+:root{
+  --morado:#690dac;
+  --dorado:#ffd902;
+  --negro:#1c1a1d;
+  --MClaro:#bc91e3;
+  --Blanco:#bc91e3;
+  --gris:#e0e0e0;
+
+}
+.nav-item, .toggle, .share-icons{
+  display: none;
+}
+
+@media (max-width:700px){
+     .nav-item {
+       width: 30px;
+       height: 30px;
+       margin-left: -25px;
+       margin-top: -25px;
+       opacity: 0;
+     }
+     .nav-item:hover i {
+       transition: all .5s ease-out;
+       transform: rotate(360deg);
+     }
+     
+     .toggle {
+       width: 40px;
+       height: 40px;
+       margin-left: -33px;
+       margin-top: -33px;
+       z-index: 2;
+       background-image: url(../img/logo/cuota.png);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-color: aliceblue;
+   }
+     .toggle:hover {
+       animation: bounce 1s cubic-bezier(0, .42, .85, 1);
+     }
+     .nav-item,
+     .toggle {
+        display: flex;
+       position: fixed;
+       bottom: 5%;
+       left: 10%;
+       border-radius: 50%;
+       cursor: pointer;
+       transition: all .4s cubic-bezier(0,.42,.42,1);
+   }
+   .share-icons{
+    display: flex;
+   }
+
+   .instagram{
+     background-image: url(../img/logo/instagram.png);
+     background-size: cover
+   }
+   .whatsapp{
+     background-image: url(../img/logo/whatsapp.png);
+     background-size: cover;
+   }
+   .facebook{
+     background-image: url(../img/logo/facebook.png);
+     background-size: cover;
+   }
+   .twitter{
+     background-image: url(../img/logo/gorjeo.png);
+     background-size: cover;
+   }
+     .share-icons .slide-out:nth-child(1) {
+        display: flex;
+        z-index: 2;
+       opacity: 1;
+       transform: translate(0px, -50px);
+   }
+     .share-icons .slide-out:nth-child(2) {
+        display: flex;
+        z-index: 2;
+       opacity: 1;
+     transform: translate(30px, -40px);
+   }
+     .share-icons .slide-out:nth-child(3) {
+        display: flex;
+        z-index: 2;
+       opacity: 1;
+     transform: translate(45px, -10px);
+   }
+     .share-icons .slide-out:nth-child(4) {
+        display: flex;
+        z-index: 2;
+       opacity: 1;
+     transform: translate(30px, 20px);
+     }
+     }

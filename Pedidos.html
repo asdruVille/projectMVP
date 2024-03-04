@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Header.css">
+    <link rel="stylesheet" href="./css/share.css">
+    <title>Document</title>
+</head>
+<body class="hidden">
+    <div id="preloader"><img src="./Comp-1_1.gif" alt=""></div>
+    <nav class="navbar">
+        <div class="circle"></div>
+      <div class="menu">
+        <ul>
+
+          <!--<li><a href="#Staff">Locacion</a></li>-->
+          <li><a href="./index.html">inicio</a></li>
+          <li><a href="./Galeria.html">Galeria</a></li>
+          <li><a href="./Pedidos.html">Pedidos</a></li>
+          <!--<li><a href="./Eventos.html">Eventos</a></li>-->
+        </ul>
+      </div>			            
+      <div class="burger">&#9776;</div>    
+    </nav>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border"></span>
+        </div>
+    </div>
+    <main class="container"">
+        <h2>Formulario de Contacto</h2>
+
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="telefono">Numero de telefono:</label><br>
+            <input type="tel" id="numero" name="numero" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+            <label for="">talla</label>
+            <select name="talla" id="">
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select><br>
+            <label for="">linea de ropa que le intereso</label>
+            <select name="linea-ropa" id="">
+                <option value="">Zelda</option>
+                <option value="">Pokemon</option>
+                <option value="">LoL</option>
+                <option value="">DOOM</option>
+                <option value="">Overwach</option>
+                <option value="">Pedido Personal</option>
+            </select>
+        <button type="submit">Enviar</button>
+
+        </form>
+        <div id="toggle-nav" class="toggle">
+        </div>
+        <div class="share-icons">
+          <div class="nav-item instagram"><a href="" class=""></a></div>
+          <div class="nav-item whatsapp"><a href="https://api.whatsapp.com/send?phone=+51998346579&text=Hola, me gustaria Obtener más información" class=""></a></div>
+          <div class="nav-item facebook"><a href="" class=""></a></div>
+          <div class="nav-item twitter"><a href="" class=""></a></div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/preloader.js"></script>
+    <script src="./javascript/menu.js"></script>
+    <script src="./javascript/share.js"></script>
+    <script src="./javascript/Pedido.js"></script>
+</body>
+</html>
